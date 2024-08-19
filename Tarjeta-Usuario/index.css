@@ -1,0 +1,133 @@
+@font-face {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fuentes/popins-medium.ttf") format("truetype"); 
+}
+:root {
+    background: linear-gradient(45deg, #d37ec6 0%, #ffc873 50%, #ff3867 100%);
+    --linear-gradient: linear-gradient(0deg, #23034b 0%, #23034b33 100%);
+}
+
+html,body{
+    margin:0;
+    padding:0;
+    height: 100vh; /* ter siempre en conta esto se nn fara o degradado como lle dea a real gana*/
+    overflow: hidden;
+}
+
+body{
+    font-family: Poppins, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    overflow: hidden;
+}
+
+.tarjeta{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr min-content;
+    width: 450px;
+    aspect-ratio: 5/8;
+    max-width: 90%;
+    background: #ffffff;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 24%), 0 1px 2px rgb(0 0 0 / 24%);
+}
+
+    & .header{
+        position: relative;
+        aspect-ratio: 1/0.44;
+        border-bottom: 3px solid #d37ec6;
+    }
+
+    & .photo-teclado{
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    & .avatar{
+        position: absolute;
+        bottom: -24px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 128px;
+        height: 128px;
+        border-radius: 50%;
+        border: 3px solid #d37ec6;
+    }
+
+    & .titulo{
+        text-align: center;
+        padding: 3rem 2rem;
+    }
+
+    & h1{
+        margin: 0 0 0.2rem;
+    }
+
+    & .ubicacion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & svg{
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+    & h2{
+        font-size: 1rem;
+        font-weight: 300;
+        color: #a05d5d;
+    }
+
+    & .description{
+        text-align: left;
+        font-size: 1.15rem;
+        line-height: 1.3rem;
+        margin-bottom: 2rem;
+    }
+
+    & .bottom{
+        display:inline-block;
+        padding: 1rem 2.5rem;
+        font-weight: 666;
+        text-decoration: none;
+        text-transform: uppercase;
+        color:#2d7cbf;
+        border:2px solid #2d7cbf;
+        border-radius: 2rem;
+    }
+
+    & .footer{
+        display: flex;
+        justify-content: space-around;
+        border-top: 2px solid #ddd;
+        text-align: center;
+    }
+
+    & .item{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding: 0.6rem 0.9rem;
+        border-right: 1px solid #ddd;
+        
+    }
+
+    
+
+
+
+
+
+
+
+
+
